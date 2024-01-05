@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>VALUE:</h1>
+    <p>ENTER:
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+    </p>
+
+    <script>
+        let light = 299792458;
+        let newtonConstant = 6.67430 * 10e-11;
+        let trippleLight = light * light * light;
+        let universeAge = 13500000000 * 60 * 60 * 24 * 365;
+        let subtotal = trippleLight * universeAge;
+        let final = subtotal / newtonConstant;
+        let equiation = (light * light * light * universeAge)/newtonConstant; 
+        document.getElementById("demo1").innerHTML = "Speed of light: " + light;
+        document.getElementById("demo2").innerHTML = "Newton's constant: " + newtonConstant;
+        document.getElementById("demo3").innerHTML = "Tripple light: " + trippleLight;
+        document.getElementById("demo4").innerHTML = "Universe's age: " + universeAge;
+        document.getElementById("demo5").innerHTML = "Namsrai's equation: " + final;
+        document.getElementById("demo6").innerHTML = "Namsrai's equation: " + equiation;
+
+    </script>
+</body>
+</html>
